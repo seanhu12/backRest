@@ -36,7 +36,7 @@ class BoletaController extends Controller
      */
     public function store(StoreBoletaRequest $request)
     {
-        return Boleta::create($request);
+        return Boleta::create($request->all());
     }
 
     /**

@@ -13,7 +13,7 @@ class StoreBoletaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class StoreBoletaRequest extends FormRequest
     public function rules()
     {
         return [
-            'table_id' => 'required'
+            'tables_id' => 'required'
         ];
     }
 }

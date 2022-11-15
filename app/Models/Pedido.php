@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+
+        'tables_number',
+        'products_name',
+        'boletas_cod',
+        'estado',
+        'cant',
+
+
+
+    ];
 }

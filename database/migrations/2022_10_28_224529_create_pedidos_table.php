@@ -15,8 +15,10 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('boletas_id');
-            $table->foreignId('products_id');
+            $table->String('boletas_cod');
+            $table->String('tables_number');
+            $table->String('products_name');
+            $table->String('estado');
             $table->integer('cant');
 
             $table->timestamps();

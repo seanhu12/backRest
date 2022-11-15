@@ -10,7 +10,9 @@ class Boleta extends Model
     use HasFactory;
 
     protected $fillable = [
-       'table_id',
+        'tables_id',
+        'boleta_cod',
         'total'
+
     ];
 }

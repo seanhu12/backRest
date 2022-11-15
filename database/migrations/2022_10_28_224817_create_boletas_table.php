@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('boletas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('tables_id');
-            $table->integer('total');
+            $table->string('tables_id');
+            $table->Integer('boleta_cod');
+            $table->Integer('total');
             $table->timestamps();
         });
     }

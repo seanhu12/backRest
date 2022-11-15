@@ -24,9 +24,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(StoreProductRequest $request)
     {
-        //
+        return Product::create($request->all());
     }
 
     /**

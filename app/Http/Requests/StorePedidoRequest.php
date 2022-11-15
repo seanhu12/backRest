@@ -13,7 +13,7 @@ class StorePedidoRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class StorePedidoRequest extends FormRequest
     public function rules()
     {
         return [
-            'cant' => 'required'
+            'cant' => 'required',
+            'products_name' => 'required',
+            'tables_number' => 'required',
+            'boletas_cod' => 'required',
+            'estado' => 'required',
         ];
     }
 }
