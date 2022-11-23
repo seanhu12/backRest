@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
-            $table->String('boletas_cod');
-            $table->String('tables_number');
-            $table->String('products_name');
+            $table->foreignId('table_id')->references('id')->on('tables');
+            $table->foreignId('product_id')->references('id')->on('products');
             $table->String('estado');
             $table->integer('cant');
 

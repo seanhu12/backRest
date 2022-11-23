@@ -10,10 +10,9 @@ class Pedido extends Model
     use HasFactory;
 
     protected $fillable = [
-
-        'tables_number',
-        'products_name',
-        'boletas_cod',
+        'id',
+        'table_id',
+        'product_id',
         'estado',
         'cant',
 

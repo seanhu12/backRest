@@ -25,9 +25,8 @@ class StorePedidoRequest extends FormRequest
     {
         return [
             'cant' => 'required',
-            'products_name' => 'required',
-            'tables_number' => 'required',
-            'boletas_cod' => 'required',
+            'product_id' => 'required',
+            'table_id' => 'required',
             'estado' => 'required',
         ];
     }

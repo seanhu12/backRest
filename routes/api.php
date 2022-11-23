@@ -28,3 +28,5 @@ Route::resource('categories', CategoryController::class);
 Route::resource('tables',TableController::class);
 Route::resource('pedidos', PedidoController::class);
 Route::resource('boletas', BoletaController::class);
+Route::post('/upload', [ImageUploadController::class, 'uploadImage'])
+    ->name('images.upload');
