@@ -13,6 +13,7 @@ class Pedido extends Model
         'id',
         'table_id',
         'product_id',
+        'boleta_id',
         'estado',
         'cant',
 

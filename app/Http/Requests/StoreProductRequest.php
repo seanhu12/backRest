@@ -25,7 +25,7 @@ class StoreProductRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'code' => 'required|unique:products|numeric'
+
         ];
     }
 }

@@ -12,7 +12,6 @@ class Boleta extends Model
     protected $fillable = [
         'id',
         'table_id',
-        'boleta_cod',
         'total'
 
     ];

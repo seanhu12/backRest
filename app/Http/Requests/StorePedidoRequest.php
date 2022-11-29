@@ -27,7 +27,6 @@ class StorePedidoRequest extends FormRequest
             'cant' => 'required',
             'product_id' => 'required',
             'table_id' => 'required',
-            'estado' => 'required',
         ];
     }
 }

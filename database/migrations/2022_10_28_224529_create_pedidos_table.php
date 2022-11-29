@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('table_id')->references('id')->on('tables');
             $table->foreignId('product_id')->references('id')->on('products');
+            $table->foreignId('boleta_id')->references('id')->on('boletas');
             $table->String('estado');
             $table->integer('cant');
 

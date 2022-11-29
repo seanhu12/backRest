@@ -24,7 +24,7 @@ class StoreBoletaRequest extends FormRequest
     public function rules()
     {
         return [
-            'tables_id' => 'required'
+            'table_id' => 'required'
         ];
     }
 }

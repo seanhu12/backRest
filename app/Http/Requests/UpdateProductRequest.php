@@ -13,7 +13,7 @@ class UpdateProductRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,6 @@ class UpdateProductRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'code' => 'required|numeric'
         ];
     }
 }
