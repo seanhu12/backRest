@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image', 255)->nullable();
             $table->string('description', 255)->nullable();
             $table->string('price', 255)->nullable();
-            $table->string('amount', 255)->nullable();
+            $table->unsignedBigInteger('amount', 255)->nullable();
 
             $table->timestamps();
         });
