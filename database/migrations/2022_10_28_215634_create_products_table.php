@@ -19,8 +19,8 @@ return new class extends Migration
             $table->foreignId('category_id')->references('id')->on('categories');
             $table->string('image', 255)->nullable();
             $table->string('description', 255)->nullable();
-            $table->string('price', 255)->nullable();
-            $table->unsignedBigInteger('amount', 255)->nullable();
+            $table->string('price', )->nullable();
+            $table->string('amount')->nullable();
 
             $table->timestamps();
         });

@@ -15,4 +15,9 @@ class Boleta extends Model
         'total'
 
     ];
+
+    public function productBolet(){
+
+        return $this->hasMany(Pedido::class,'boleta_id');
+    }
 }
